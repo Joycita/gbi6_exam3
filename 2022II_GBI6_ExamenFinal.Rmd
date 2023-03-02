@@ -271,7 +271,7 @@ digest::digest(mat, algo = 'md5')
 digest::digest(metadata, algo = 'md5')
 digest::digest(sig_genes, algo = 'md5')
 ```
-
+se
 
 Aquí se carga los datos `EMTAB6141.rdata` que se requiere para este ejercicio. Requieres usar: 
 
