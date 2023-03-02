@@ -173,6 +173,22 @@ cat(paste0('<center><img src="', img4,'" width="200" height="200" alt=""></cente
 
 ```{r p1.1, echo=TRUE, warning=FALSE, fig.height=8}
 # Escriba aquí su código
+P4= ggplot(penguins, aes(x=Body_Mass_g, y = Flipper_Length_mm,  color=factor(species))) + geom_smooth(method = "lm", se = FALSE, na.rm = TRUE) + geom_point(size=0.6, alpha=0.2) +  theme_classic() + facet_grid(factor(island)~factor(sex)) +  theme(legend.position = "none") + 
+stat_poly_eq(coef.digits = 2,use_label(c("eq", "adj.R2")), formula = y ~ poly(x,1, raw = TRUE), label.x.npc = 0.9, label.y.npc = 1.0, cex=3) + labs(x = "Body Mass [mm]", y = "Flipper Length [mm]")
+
+install.packages("ggcorrplot")
+library(ggcorrplot)
+
+val_num <- penguins[,-c(1,2,7)]
+
+corr <- round(cor(val_num), 1)
+
+p.mat <- cor_pmat(val_num)
+
+P5 <- ggcorrplot(corr)
+
+
+
 
 ```
 
@@ -251,6 +267,14 @@ Realice la réplica e interpretación de los niveles de expresión génica en mu
 ```{r, warning=FALSE}
 require(RColorBrewer); require(ComplexHeatmap); require(circlize); 
 require(digest); require(cluster)
+```
+
+```{r}
+library(digest)
+library(cluster)
+digest::digest(mat, algo = 'md5')
+digest::digest(metadata, algo = 'md5')
+digest::digest(sig_genes, algo = 'md5')
 ```
 
 
