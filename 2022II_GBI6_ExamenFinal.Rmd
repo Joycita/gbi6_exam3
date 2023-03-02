@@ -179,13 +179,8 @@ stat_poly_eq(coef.digits = 2,use_label(c("eq", "adj.R2")), formula = y ~ poly(x,
 install.packages("ggcorrplot")
 library(ggcorrplot)
 
-val_num <- penguins[,-c(1,2,7)]
 
-corr <- round(cor(val_num), 1)
-
-p.mat <- cor_pmat(val_num)
-
-P5 <- ggcorrplot(corr)
+P5= ggcorrplot(corr, hc.order = TRUE, type = "lower")
 
 
 
