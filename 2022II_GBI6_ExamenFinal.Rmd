@@ -148,6 +148,10 @@ ggarrange(p3, ggarrange(p1, p2, labels =c("b", "c"), nrow=2),
 
 **INTERPRETACIÓN**
 
+En la figura se puede observar el largo de pico en mm con respecto al ancho de pico en mm, se puede evidenciar que para Adelie en la isla Biscoe a medida que crece el largo de pico su anchura tambien, sin embargo se evidencia una diferencia de estas variables en la isla Torgersen en donde el largo de pico es mas pequeño pero su anchura es mayor. Por otro lado, se teiene a Chrinstrap el cual presenta datos unicamente para la isla Dream teniendo un valor de R de 0.43 y su correlación de datos es mayor. Finalmente, se tiene para Gentoo el cual presenta datos solo en la isla Biscoe se puede evidencia que sus datos están correlacionados. 
+Por otra parte, se puede ver en la gráfica de caja y bigote los datos a través de cuartiles en donde se analiza el ancho de pico con respecto a las especies, tanto para Adelie y Chinstrap el ancho de pico es similar con respecto a Gentoo, asimismo se evidencia una cierta variabilidad fuera de los cuartiles. 
+
+
 ### [3.0 puntos] 1.2. Genere dos gráficas `p4` y `p5`donde: 
 
 - `p4` es una regresión de `x: body_mass_g` y `y: flipper_length_mm`, que tiene inserto la ecuación de la regresión y el $R^2$. Asimismo tiene una coloración por sexo, y una separación por sexo e isla. 
@@ -237,7 +241,7 @@ Realice una descripción de lo que observa en el mapa de calor considerando:
 - el tipo de suero
 
 **INTERPRETACIÓN:** 
-
+En el mapa de calor se evidencia que ha mayor distancia la intensidad del color aumenta por ejemplos a una distancia de 150 se puede ver un color más amarillento 
 
 
 ## [3.0 puntos] 2.2. Mapa de calor artritis reumatoide. 
