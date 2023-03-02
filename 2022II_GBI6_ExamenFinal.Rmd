@@ -1,8 +1,8 @@
 ---
 title: "Bioinformática- GBI6"
 subtitle: "EXAMEN FINAL - 2022II"
-author: "APELLIDO, Nombre"
-date: "`r Sys.Date()`"
+author: "Andrade Joyce"
+date: "`1/03/2023`"
 output:
   html_document:
     toc: yes
@@ -241,7 +241,7 @@ Realice una descripción de lo que observa en el mapa de calor considerando:
 - el tipo de suero
 
 **INTERPRETACIÓN:** 
-En el mapa de calor se evidencia que ha mayor distancia la intensidad del color aumenta por ejemplos a una distancia de 150 se puede ver un color más amarillento 
+En el mapa de calor se evidencia que ha mayor distancia la intensidad del color aumenta por ejemplo a una distancia de 150 se puede ver un color más amarillento y asimismo el tipo de suero que se emplea es el HIHS y el tiempo es de 48 H. Por otro lado, tambien se puede evidenciar que para las intensidades de color mas bajas el tipo de suero emplado es HS y el tiempo de exposicion al tratamiento para x10, x3 y x17 es de 48 H sin embargo para x2, x16 el tiempo de es 24 H. 
 
 
 ## [3.0 puntos] 2.2. Mapa de calor artritis reumatoide. 
